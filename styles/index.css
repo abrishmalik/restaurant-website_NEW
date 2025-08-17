@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.UpperNav{
+    display: flex;
+    justify-content: space-around;
+    font-family: "Dancing Script", cursive;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    position: fixed;
+}
+.UpperNav:hover{
+    background-color: black;
+    transition: 0.5s;
+    animation-timing-function: 0.3s;
+    animation: ease;
+    animation-duration: 02s;
+}
+.UpperNav h1 {
+    color: white;
+}
+.UpperNav a{                             
+    text-decoration: none;
+}
+.UpperNav ul{
+    color: white;
+    font-family: "Ubuntu Mono", monospace;
+}
+.UpperNav li{                   
+    color: white;
+    float: left;
+    margin-left: 50px;  
+    list-style: none;
+}
+.UpperNav img{
+    display: none;
+}
+.homecontainer{
+    background-image: url('/assets/background1.jpg');
+    width: 99vw;
+    height:100vh;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homecontent{
+    color: white;
+}
+.homecontent h1{
+     font-family: "Dancing Script", cursive;
+        color: white;
+        font-size: 50px;
+        font-style: italic;
+        text-shadow: 0 0 10px black;
+        animation: textType infinite steps(1000) 5s;
+        border-right: 2px solid white;
+        overflow: hidden;
+        white-space: nowrap;
+}
+@keyframes textType {
+    0% {
+      width: 0ch; }
+    50% {
+      width: 23ch; }
+    100% {
+      width: 0ch; }
+}
+.homecontent p{
+    text-shadow: 0 0 10px black;
+    font-family: "Ubuntu Mono", monospace;
+    margin-top: 30px;
+    font-size: 23px;
+}
+.homecontent button{
+    margin-top: 30px;
+    height: fit-content;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 18px 25px;
+    font-family: "Ubuntu Mono", monospace;
+    cursor: pointer;
+}
+.homecontent button:hover{
+    border: 0.1px solid #FFCE44;
+    animation: ease;
+    scale: 1.1;
+    transition: 0.3s;
+    background-color: #FFCE44;
+    animation-name: btn;
+}
+.homeabout{
+    font-family: "Ubuntu Mono", monospace;
+    margin-top: 12%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.homeleft{
+    width: 25%;
+    margin-left: 15%;
+}
+.homeleft p{
+    text-align: justify;
+    margin-top: 20px;
+}
+.homeleft button{
+    margin-top: 20px;
+    height: fit-content;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    padding: 20px 30px;
+    font-family: "Ubuntu Mono", monospace;
+    cursor: pointer;
+}
+.homeleft button:hover{
+    animation: ease;
+    scale: 1.1;
+    transition: 0.3s;
+    background-color: #FFCE44;
+}
+.homeright img{
+    width: 70%;
+}
+.homeright{
+    display: flex;
+    align-items: center;
+}
+.HomeLastSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13%;
+    padding-bottom: 2%;
+    background-color: black;
+}
+.HomeLastSectionicons{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    color: black;
+    width: 1%;
+    margin-left: 0.5%;
+    font-size:40px;
+}
+.HomeLastSectionicons i{
+    padding: 10%;
+}
+.HomeLastSection p{
+    font-size: 25px;
+    font-family: "Ubuntu Mono", monospace;
+    margin-top: 10%;
+    color: white;
+}
+.fa-brands{     
+    border: 4px solid black;
+    background-color: white;
+    border-radius: 20%;
+    width: 100%;
+    height: fit-content;
+}
+.HomeLastSection i:hover{     
+    border: 4px solid black;
+    animation: ease;
+    scale: 1.1;
+    transition: 0.3s;
+    background-color: #FFCE44;
+    cursor: pointer;
+    border-radius: 20%;
+    height: fit-content;
+}
+.homecontentphonever{
+    display: none;
+}
+.lowerNav{
+    display: none;
+}
+@media screen and (max-width: 1440px) {
+    .homeleft{
+    width: 52%;
+    margin-right: 5%;
+    text-align: center;
+    }
+    .homecontainer{
+        width: 100vw;
+    }
+}
+@media screen and (max-width: 320px) {
+    .lowerNavbar ul{
+        background-color: black;
+        margin-top: 290%;
+    }
+}
+@media screen and (max-width: 426px){
+    .homecontent{
+       display: none;
+    }
+    .lowerNavbar ul{
+        background-color: black;
+        margin-bottom: 125px;
+    }
+    .homecontentphonever{
+        display: block;
+        color: white;
+        font-size: 28px;
+        font-family: "Ubuntu Mono", monospace;
+    }
+    .homecontentphonever p{
+        margin-top: 5%;
+        font-family: "Ubuntu Mono", monospace;
+    }
+    .homecontentphonever h1{
+        margin-top: 5%;
+        font-family: "Dancing Script", cursive;
+        font-style: italic;
+    }
+    .homecontentphonever button{
+        margin-top: 20px;
+    height: fit-content;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 20px 30px;
+    font-family: "Ubuntu Mono", monospace;
+    cursor: pointer;
+    }
+}
+ @media screen and (max-width: 768px) {
+    .lowerNav{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: "Dancing Script", cursive;
+        align-items: center;
+        font-style: italic;
+        height: 80px;
+        position: fixed;
+        width: 100%;
+    }
+    .lowerNavbar li{
+        font-family: "Ubuntu Mono", monospace;
+        color: white;
+        padding-top: 2.8%;
+        padding-bottom: 2.8%;
+        font-size: 25px;
+        list-style: none;
+        border-top: 1px solid #808080;
+        width: 100%;
+        text-align: center;
+    }
+    .lowerNavbar ul{
+        background-color: black;
+        width: 100%;
+        margin-top: 10%;
+        display: none;
+    }
+    .lowerNavbar{
+        display: none;
+        width: 100%;
+        position: absolute;
+    }
+    .lowerNavbar a{
+        text-decoration: none;
+    }
+    .lowerNavbar i{
+        color: white;
+    }
+    .HomeLastSection p{
+    text-align: center;
+    font-size: 25px;
+    font-family: "Ubuntu Mono", monospace;
+    margin-top: 6%;
+    color: white;
+    }   
+.homeleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+.homeabout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .homeright{
+        margin-left: 25%;
+        margin-top: 20px;
+    }
+ }

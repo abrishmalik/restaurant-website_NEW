@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.UpperNav{
+    display: flex;
+    justify-content: space-around;
+    font-family: "Dancing Script", cursive;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    position: fixed;
+}
+.UpperNav:hover{
+    background-color: black;
+    transition: 0.5s;
+    animation-timing-function: 0.3s;
+    animation: ease;
+    animation-duration: 02s;
+}
+.UpperNav h1 {
+    color: white;
+}
+.UpperNav a{                             
+    text-decoration: none;
+}
+.UpperNav ul{
+    color: white;
+    font-family: "Ubuntu Mono", monospace;
+}
+.UpperNav li{                   
+    color: white;
+    float: left;
+    margin-left: 50px;  
+    list-style: none;
+}
+.UpperNav img{
+    display: none;
+}
+.lowerNav{
+    display: none;
+}
+.gallerycontainer{
+      height: 125vh;
+    width: 100%;
+    background: url('/assets/skyline.jpg');
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ourgallerycontainer{
+    text-align: center;
+    margin-top: 5%;
+}
+.ourgallerycontainer h1{
+    font-size: 40px;
+    font-family: "Dancing Script", cursive;
+}
+.ourgalleryimgs{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ourgalleryimgs a img{ 
+    width: 55%;
+}
+.HomeLastSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13%;
+    padding-bottom: 2%;
+    background-color: black;
+}
+.HomeLastSectionicons{
+    justify-content: center;
+    display: flex;
+    width: 1%;
+    margin-top: 2%;
+    color: black;
+    margin-left: 0.5%;
+    font-size:40px;
+}
+.HomeLastSectionicons i{
+    padding: 10%;
+}
+.HomeLastSection p{
+    font-size: 25px;
+    font-family: "Ubuntu Mono", monospace;
+    margin-top: 10%;
+    color: white;
+}
+.fa-brands{     
+    border: 4px solid black;
+    background-color: white;
+    border-radius: 20%;
+    width: 100%;
+    height: fit-content;
+}
+.HomeLastSection i:hover{     
+    border: 4px solid black;
+    animation: ease;
+    scale: 1.1;
+    transition: 0.3s;
+    background-color: #FFCE44;
+    cursor: pointer;
+    border-radius: 20%;
+    height: fit-content;
+}
+.gallerydiv{
+    border: 2px solid #808080;
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba(0,0,0,0.4);
+    width: 70%;
+    height: 100vh;
+}
+.gallerycontainerright{
+    width: 55%;
+    margin-right: 5%;
+    color: white;
+    font-family: "Ubuntu Mono", monospace;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.gallerycontainerright p{
+    margin-top: 3%;
+    font-size: 16px;
+}
+.gallerycontainerright h3{
+    margin-top: 3%;
+    color: #808080;
+    font-style: italic;
+}
+.gallerycontainerleft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallerycontainerleft img{
+    border-radius: 50%;
+    width:70%;
+}
+.gallerycontainerright button{
+    margin-top: 3%;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 170px;
+    font-family: "Ubuntu Mono", monospace;
+    cursor: pointer;
+}
+.gallerycontainerright button:hover{
+    animation: ease;
+    scale: 1.1;
+    transition: 0.3s;
+    background-color: #FFCE44;
+}
+.gallerycontainer{
+    background-color: aquamarine;
+}
+@media screen and (max-width: 320px) {
+    .lowerNavbar ul{
+        background-color: black;
+        margin-top: 290%;
+    }
+    .gallerycontainerright p{
+        font-size: 0px;
+    }
+}
+@media screen and (max-width: 426px){
+    .gallerycontainerright h1{
+        text-align: center;
+    }
+    .ourgalleryimgs{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .gallerycenterdivphonever{
+        font-family: "Dancing Script", cursive;
+        margin-top: 25%;
+        width: 100%;
+        text-align: center;
+      height: 400px;
+      overflow: hidden;
+      color: white;
+    }
+    .gallerycenterdivphonever h1{
+        font-style: italic;
+    }
+    .gallerycenterdivphonever h2{
+        margin-top: 5%;
+        font-family: "Ubuntu Mono", monospace;
+    }
+.gallerycenterdivphonever p{
+    margin-top: 5%;
+        font-family: "Ubuntu Mono", monospace;
+
+}
+    .gallerycontent{
+        display: none;
+    }
+    .homecontent{
+       display: none;
+    }
+    .lowerNavbar ul{
+        background-color: black;
+        margin-bottom: 125px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .gallerycontainer{
+        height: 140vh;
+    }
+    .gallerycontainerright p{
+        font-size: 10px;
+    }
+    .gallerydiv{
+        display: flex;
+        margin-top: 15%;
+        height: 110vh;
+        flex-direction: column;
+    }
+    .gallerycontainerleft img{
+        width: 30%;
+        margin-top: 5%;
+    }
+    .gallerycontainerright{
+        text-align: justify;
+margin-left: 25%;
+    }
+    .gallerycontainerright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .lowerNav{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: "Dancing Script", cursive;
+        align-items: center;
+        font-style: italic;
+        height: 80px;
+        position: fixed;
+        width: 100%;
+    }
+    .lowerNavbar li{
+        font-family: "Ubuntu Mono", monospace;
+        color: white;
+        padding-top: 2.8%;
+        padding-bottom: 2.8%;
+        font-size: 25px;
+        list-style: none;
+        border-top: 1px solid #808080;
+        width: 100%;
+        text-align: center;
+    }
+    .lowerNavbar ul{
+        background-color: black;
+        width: 100%;
+        margin-top: 10%;
+        display: none;
+    }
+    .lowerNavbar{
+        display: none;
+        width: 100%;
+        position: absolute;
+    }
+    .lowerNavbar a{
+        text-decoration: none;
+    }
+    .lowerNavbar i{
+        color: white;
+    }
+}

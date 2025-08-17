@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.UpperNav{
+    display: flex;
+    justify-content: space-around;
+    font-family: "Dancing Script", cursive;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    position: fixed;
+}
+.UpperNav:hover{
+    background-color: black;
+    transition: 0.5s;
+    animation-timing-function: 0.3s;
+    animation: ease;
+    animation-duration: 02s;
+}
+.UpperNav h1 {
+    color: white;
+}
+.UpperNav a{                             
+    text-decoration: none;
+}
+.UpperNav ul{
+    color: white;
+    font-family: "Ubuntu Mono", monospace;
+}
+.UpperNav li{                   
+    color: white;
+    float: left;
+    margin-left: 50px;  
+    list-style: none;
+}
+.UpperNav img{
+    display: none;
+}
+.lowerNav{
+    display: none;
+}
+.gallerycontainer{
+      height: 100vh;
+    width: 100%;
+    background: url('/assets/blogback.jpg');
+    background-attachment: fixed;
+    background-size: 1900px 800px;
+    background: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallerycenterdiv h1{
+    font-family: "Dancing Script", cursive;
+          color: white;
+          font-size: 50px;
+          text-shadow: 0px 0px 10px black;
+          margin-bottom: 10px;
+          text-align: center;
+}
+.gallerycenterdiv p{
+        font-family: "Ubuntu Mono", monospace;
+          color: white;
+          text-shadow: 0px 0px 10px black;
+          margin-bottom: 10px;
+          text-align: center;
+}
+.blogpostcontainerh1{
+    text-align: center;
+    margin-top: 5%;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 20px;
+}
+.blogpostcontent{
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    font-family: "Ubuntu Mono", monospace;
+}
+.blogpost1{
+    background-color: white; 
+    border: 2px solid;
+    width: 57%;
+    height: 23vh;
+    display: flex;
+}
+.blogpost2, .blogpost3, .blogpost4, .blogpost5{
+    background-color: white; 
+    border: 2px solid;
+    width: 57%;
+    height: 23vh;
+    display: flex;
+    margin-top: 6%;
+}
+.blogpost1left{
+    margin-top: 3%;
+    width: fit-content;
+    display: flex;
+    height: 15vh;
+    margin-left: 3%;
+}
+.blogpost1left img{
+    width:180%;
+    height: 15vh;
+    border-radius: 50%;
+}
+.blogpost1right{
+    width: fit-content;
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 15vh;
+}
+.blogpost1bottom{
+    background-color: #CECECE;
+    border: 2px solid;
+    width: 57%;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+}
+.blogpost1bottom h3, i{
+    margin-left: 2%;
+    font-size: 20px;
+}
+.fa-thumbs-down:hover{
+    cursor: pointer;
+    background-color: red;
+    transition-delay: 0.2s;
+    animation-timing-function: 5s;
+    scale: 1.1;
+}
+.fa-thumbs-up:hover{
+    cursor: pointer;
+    background-color: lightblue;
+    transition-delay: 0.2s;
+    animation-timing-function: 5s;
+    scale: 1.1;
+}
+.blogpost1bottominner{
+    width: 40%;
+    display: flex;
+    margin-left: 3%;
+}
+.HomeLastSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13%;
+    padding-bottom: 2%;
+    background-color: black;
+}
+.HomeLastSectionicons{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    color: black;
+    width: 1%;
+    margin-left: 0.5%;
+    font-size:40px;
+}
+.HomeLastSectionicons i{
+    padding: 10%;
+}
+.HomeLastSection p{
+    font-size: 25px;
+    font-family: "Ubuntu Mono", monospace;
+    margin-top: 10%;
+    color: white;
+}
+.fa-brands{     
+    border: 4px solid black;
+    background-color: white;
+    border-radius: 20%;
+    width: 100%;
+    height: fit-content;
+}
+.HomeLastSection i:hover{     
+    border: 4px solid black;
+    animation: ease;
+    scale: 1.1;
+    transition: 0.3s;
+    background-color: #FFCE44;
+    cursor: pointer;
+    border-radius: 20%;
+    height: fit-content;
+}
+@media screen and (max-width: 320px) {
+    .lowerNavbar ul{
+        background-color: black;
+        margin-top: 290%;
+    }
+}
+@media screen and (max-width: 426px){
+    .blogpost1, .blogpost2, .blogpost3,.blogpost4, .blogpost5{
+        display: flex;
+        flex-direction: column;height: fit-content;
+    }
+    .blogpost1right p{
+        display: none;
+    }
+    .HomeLastSection{
+        margin-top: 10%;
+    }
+    .ourgalleryimgs{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .gallerycenterdivphonever{
+        font-family: "Dancing Script", cursive;
+        margin-top: 25%;
+        width: 100%;
+        text-align: center;
+      height: 400px;
+      overflow: hidden;
+      color: white;
+    }
+    .gallerycenterdivphonever h1{
+        font-style: italic;
+    }
+    .gallerycenterdivphonever h2{
+        margin-top: 5%;
+        font-family: "Ubuntu Mono", monospace;
+    }
+.gallerycenterdivphonever p{
+    margin-top: 5%;
+        font-family: "Ubuntu Mono", monospace;
+
+}
+    .gallerycontent{
+        display: none;
+    }
+    .homecontent{
+       display: none;
+    }
+    .lowerNavbar ul{
+        background-color: black;
+        margin-bottom: 125px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .lowerNav{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: "Dancing Script", cursive;
+        align-items: center;
+        font-style: italic;
+        height: 80px;
+        position: fixed;
+        width: 100%;
+    }
+    .lowerNavbar li{
+        font-family: "Ubuntu Mono", monospace;
+        color: white;
+        padding-top: 2.8%;
+        padding-bottom: 2.8%;
+        font-size: 25px;
+        list-style: none;
+        border-top: 1px solid #808080;
+        width: 100%;
+        text-align: center;
+    }
+    .lowerNavbar ul{
+        background-color: black;
+        width: 100%;
+        margin-top: 10%;
+        display: none;
+    }
+    .lowerNavbar{
+        display: none;
+        width: 100%;
+        position: absolute;
+    }
+    .lowerNavbar a{
+        text-decoration: none;
+    }
+    .lowerNavbar i{
+        color: white;
+    }
+}

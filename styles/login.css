@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.UpperNav{
+    display: flex;
+    justify-content: space-around;
+    font-family: "Dancing Script", cursive;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    position: fixed;
+}
+.UpperNav:hover{
+    background-color: black;
+    transition: 0.5s;
+    animation-timing-function: 0.3s;
+    animation: ease;
+    animation-duration: 02s;
+}
+.UpperNav h1 {
+    color: white;
+}
+.UpperNav a{                             
+    text-decoration: none;
+}
+.UpperNav ul{
+    color: white;
+    font-family: "Ubuntu Mono", monospace;
+}
+.UpperNav li{                   
+    color: white;
+    float: left;
+    margin-left: 50px;  
+    list-style: none;
+}
+.UpperNav img{
+    display: none;
+}
+.lowerNav{
+    display: none;
+}
+.gallerycontainer{
+      height: 100vh;
+    width: 100%;
+    background: url('/assets/contact.jpg');
+    background-attachment: fixed;
+    background-size: 1900px 800px;
+    background: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logincontainer{
+    background: rgba(0,0,0,0.6);
+    border: 2px solid #808080;
+    height: 78vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    border-radius: 5%;
+}
+.logincontainer h1{
+    font-family: "Dancing Script", cursive;
+    font-style: italic;
+}
+.logincontainer h3{
+    margin-top: 5%;
+    font-family: "Ubuntu Mono", monospace;
+}
+.loginemail{
+    padding: 3%;
+    margin-top: 3%;
+    width: 80%;
+    height: 6vh;
+    background: transparent;
+    border: 1px solid #808080;
+    font-family: "Ubuntu Mono", monospace;
+}
+.logincontainer button{
+    margin-top: 3%;
+    height: fit-content;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 18px 60px;
+    font-family: "Ubuntu Mono", monospace;
+    cursor: pointer;
+}
+.logincontainer button:hover{
+    border: 0.1px solid #FFCE44;
+    animation: ease;
+    scale: 1.1;
+    transition: 0.3s;
+    background-color: #FFCE44;
+    animation-name: btn;
+}
+.logincontainer p{
+    margin-top: 3%;
+    font-family: "Ubuntu Mono", monospace;
+}
+.logincontainer a p{
+    margin-top: 4%;
+    color: red;
+    font-style: italic;
+}
+.logincontainer a{
+    text-decoration: none;
+}
+.HomeLastSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+    background-color: black;
+}
+.HomeLastSectionicons{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    color: black;
+    width: 1%;
+    margin-left: 0.5%;
+    font-size:40px;
+}
+.HomeLastSectionicons i{
+    padding: 10%;
+}
+.HomeLastSection p{
+    font-size: 25px;
+    font-family: "Ubuntu Mono", monospace;
+    margin-top: 10%;
+    color: white;
+}
+.fa-brands{     
+    border: 4px solid black;
+    background-color: white;
+    border-radius: 20%;
+    width: 100%;
+    height: fit-content;
+}
+.HomeLastSection i:hover{     
+    border: 4px solid black;
+    animation: ease;
+    scale: 1.1;
+    transition: 0.3s;
+    background-color: #FFCE44;
+    cursor: pointer;
+    border-radius: 20%;
+    height: fit-content;
+}
+@media screen and (max-width: 320px) {
+    .lowerNavbar ul{
+        background-color: black;
+        margin-top: 290%;
+    }
+}
+@media screen and (max-width: 426px){
+    .ourgalleryimgs{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .gallerycenterdivphonever{
+        font-family: "Dancing Script", cursive;
+        margin-top: 25%;
+        width: 100%;
+        text-align: center;
+      height: 400px;
+      overflow: hidden;
+      color: white;
+    }
+    .gallerycenterdivphonever h1{
+        font-style: italic;
+    }
+    .gallerycenterdivphonever h2{
+        margin-top: 5%;
+        font-family: "Ubuntu Mono", monospace;
+    }
+.gallerycenterdivphonever p{
+    margin-top: 5%;
+        font-family: "Ubuntu Mono", monospace;
+
+}
+    .gallerycontent{
+        display: none;
+    }
+    .homecontent{
+       display: none;
+    }
+    .lowerNavbar ul{
+        background-color: black;
+        margin-bottom: 125px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .logincontainer{
+        width: 80%;
+        margin-top: 10%;
+    }
+    .lowerNav{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: "Dancing Script", cursive;
+        align-items: center;
+        font-style: italic;
+        height: 80px;
+        position: fixed;
+        width: 100%;
+    }
+    .lowerNavbar li{
+        font-family: "Ubuntu Mono", monospace;
+        color: white;
+        padding-top: 2.8%;
+        padding-bottom: 2.8%;
+        font-size: 25px;
+        list-style: none;
+        border-top: 1px solid #808080;
+        width: 100%;
+        text-align: center;
+    }
+    .lowerNavbar ul{
+        background-color: black;
+        width: 100%;
+        margin-top: 10%;
+        display: none;
+    }
+    .lowerNavbar{
+        display: none;
+        width: 100%;
+        position: absolute;
+    }
+    .lowerNavbar a{
+        text-decoration: none;
+    }
+    .lowerNavbar i{
+        color: white;
+    }
+}
